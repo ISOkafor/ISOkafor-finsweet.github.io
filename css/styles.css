@@ -1,0 +1,389 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5px;
+}
+
+.right-section {
+    display: flex;
+    align-items: center;
+}
+
+.right-section ul {
+    list-style: none;
+    display: flex;
+}
+
+.road-assistance {
+    display: flex;
+    padding-left: 20px;
+}
+
+.right-section ul li {
+    margin-right: 20px;
+}
+
+.right-section ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.right-section .navigation {
+    border-right: 2px solid #ccc;
+}
+
+.road-assistance .icon {
+    margin-right: 10px;
+}
+
+.flex {
+    display: flex;
+    padding: 20px 5px;    
+}
+
+#hero-section .text-section {
+    width: 45%;
+}
+
+#hero-section .image-section {
+    width: 55%;
+    background: url(../img/header-image.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 68vh;
+}
+
+#hero-section,
+#quote-section,
+#process-section {
+    padding: 80px 0; 
+}
+
+.text-section h1 {
+    font-size: 64px;
+}
+
+.orange-btn {
+    background: #FF6433;
+    border-radius: 12px;
+    border: none;
+    padding: 16px 40px;
+    text-decoration: none;
+    font-size: 18px;
+    margin-top: 35px;
+    display: inline-block;
+    color: #fff;
+}
+
+.time-section {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.text-section .image-box {
+    width: 5%;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-section .time-text {
+    width: 95%;
+}
+
+.time-section img {
+    width: 100%;
+}
+
+.light-grey {
+    color: #939191;
+}
+
+#quote-section,
+#offer-section,
+#experience-section {
+    background: #E2E6E9;
+}
+
+#quote-section .left-section,
+#quote-section .right-form-section {
+    width: 45%;
+}
+
+#quote-section ul {
+    list-style: none;
+}
+
+#quote-section ul li {
+    margin-bottom: 20px;
+}
+
+#quote-section .left-section h2,
+#process-section .head-section h2 {
+    margin-bottom: 30px;
+    font-size: 58px;
+}
+
+#quote-section .left-section .image-box {
+    width: 5%;
+    margin-right: 10px;
+}
+
+#quote-section .left-section .image-box img {
+    width: 100%;
+}
+
+#quote-section .left-section .text-box {
+    width: 50%;
+}
+
+#quote-section .left-section .text-box h5 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.right-form-section {
+    margin-top: 18px
+}
+
+#quote-section .right-form-section h3 {
+    font-size: 48px;
+    margin-bottom: 25px;
+}
+
+#quote-section .right-form-section input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#quote-section .text-box a {
+    text-decoration: none;
+    color: #000;       
+}
+
+#more-quote {
+    margin-left: 35px;        
+}
+
+#process-section .flex {    
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+#process-section .step-section,
+#process-section .head-section {
+    width: 40%;    
+}
+
+.step-section {    
+    display: flex;    
+}
+
+.step-section ul {
+    list-style: none;
+}
+
+#process-section .step {
+    display: flex;    
+}
+
+#process-section .image-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+#process-section img {
+    padding: 10px;
+}
+
+.step .small {
+    width: 70px;
+    height: 70px;
+}
+
+#process-section .text-section {
+    display: flex;
+    flex-direction: column;       
+}
+
+.text-section h3,
+.text-section p {
+    padding: 10px 5px;
+}
+
+.step p {
+    width: 60%;
+    margin-top: 10px;
+}
+
+.text-section h3 {
+    font-size: 24px;
+    margin-top: 12px;
+}
+
+#offer-section .flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 0px;    
+}
+
+#offer-section .desc {
+    margin-bottom: 20px;
+    padding: 0 200px;
+    text-align: center;
+}
+
+.desc h3 {
+    font-size: 40px;
+    margin-top: 10px;    
+}
+
+.desc p {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#offer-section .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5px;
+    margin-bottom: 30px;      
+}
+
+.grid-box {
+    background: #fff;
+    width: 200px;
+    height: 150px;
+    padding: 40px;
+    text-align: center;
+}
+
+.grid .orange {
+    background: #FF6433;
+}
+
+#offer-section .about-service {
+    display: flex;
+    align-self: flex-end;
+    margin-right: 180px;    
+}
+
+.about-service img {
+    margin-top: 2px;
+    margin-right: 15px;
+    padding: 0 5px;
+    width: 53px;
+    height: 16px;
+    transition: 10s ease-out;
+}
+
+#cta-section {
+    width: 100%;
+}
+
+.cta {
+    position: relative;
+    display: flex;    
+}
+
+.cta .car-image {
+    background: url(../img/car-image.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 50vh;
+}
+
+.cta .car-engine {
+    background: url(../img/car-engine.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 50vh;
+}
+
+#cta-section .orange-box {
+    background: #FF6433;
+    position: absolute;
+    color: #fff;
+    height: 50vh;
+    width: 37%;
+    left: 17%;
+    padding: 50px;            
+}
+
+.cta .orange-box p {
+    font-size: 30px;    
+    font-weight: 700;
+    margin: 50px 20px;
+}
+
+.orange-box button {
+    background: #000;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    margin-left: 20px;    
+}
+
+#experience-section .flex {
+    justify-content: space-between;
+    margin: 0 70px;
+    padding: 40px 0px;
+}
+
+.experience {
+    font-weight: 700;
+}
+
+.experience h2 {
+    font-size: 45px;
+    color: #800080;
+}
+
+.experience p {
+    color: rgb(61, 61, 61);
+}
+
+#brands-section {
+    margin-bottom: 80px;
+    background: #f6f6f6;
+}
+
+#brands-section .flex {
+    flex-direction: column;
+    margin: 0 50px;
+    padding: 80px 0px;
+}
+
+#brands-section h2 {
+    text-align: center;
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.brand-row {
+    display: flex;
+    padding-right: 40px;    
+}
+
