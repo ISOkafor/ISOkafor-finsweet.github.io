@@ -315,7 +315,8 @@
     margin: 40px 0 15px 0;
 }
 
-#offer-section .grid .grid-box:hover {
+#offer-section .grid .grid-box:hover,
+#offer-section #orange {
     background: #FF6433;
     color: #fff;
 }
@@ -594,7 +595,7 @@ footer {
     color: #939191;
 }
 
-.right-section .navigation {
+.main-footer .right-section .navigation {
     border: none;
 }
 
@@ -602,3 +603,191 @@ footer {
     margin-right: 150px;
 }
 
+/* Mobile Design */
+
+@media (max-width: 426px) {
+    .main-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .main-header .right-section {
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+
+    }
+
+    .main-header .navigation ul,
+    #hero-section .flex,
+    #quote-section .flex,
+    #process-section .flex,
+    #contact-us .flex {
+        flex-direction: column;
+    }
+
+    .main-header .navigation ul a{
+        display: block;
+    }
+
+    .main-header .navigation {
+        border: none;
+        width: 100%;
+    }
+
+    .main-header .right-section ul li {
+        padding: 10px 0;
+        margin-right: 0;
+    }
+
+    .road-assistance {
+        padding: 10px 0;
+    }
+
+    #hero-section {
+        padding-top: 50px;
+    }
+
+    #hero-section .image-section,
+    #hero-section .text-section,
+    #quote-section .left-section,
+    #quote-section .right-form-section,
+    #process-section .head-section,
+    #process-section .step-section,    
+    .container,
+    #contact-us .right-social,
+    #contact-us .left-address {
+        width: 100%;
+    }    
+
+    #hero-section .image-section {
+        order: 1;        
+    }
+
+    #hero-section .text-section {
+        order: 2;
+    }
+
+    #hero-section h1,
+    #quote-section .left-section h2,
+    #quote-section .right-form-section h3,
+    #process-section .head-section h2,
+    .experience h2 {
+        font-size: 35px;
+    }
+
+    #quote-section .left-section .text-box {
+        width: 80%;
+    }
+
+    #quote-section .flex-row {
+        flex-direction: row;
+        padding-top: 0;
+    }
+
+    #process-section .step-section {
+        margin-top: 30px;
+    }
+
+    #offer-section .grid {
+        padding-top: 0;
+    }
+
+    #offer-section .grid .grid-box {
+        width: 48%;
+    }
+
+    #cta-section .orange-box {
+        padding: 5px;
+    }
+
+    #cta-section .orange-box p {
+        font-size: 16px;
+        margin: 20px;
+    }
+
+    #experience-section .flex {
+        margin: 0 20px;
+    }
+
+    #experience-section .experience {
+        width: 25%;
+    }
+
+    #brands-section .flex {
+        margin: 0;
+    }
+
+    #brands-section .brand-row {        
+        width: 50%;
+        flex-direction: column;
+        padding-right: 0;
+    }
+
+    #brands-section .column-flex {
+        display: flex;        
+    }
+
+    #customer-review h2 {
+        margin: 0;
+        font-size: 35px;
+    }
+
+    #customer-review .reviews {
+        gap: 20px;
+        overflow: scroll;
+    }
+
+    .reviews .review-box {
+        width: 100%;
+        padding: 20px;        
+    }
+
+    .review-text p {
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    .review-scroll {
+        width: 100%;
+        margin: 10px;
+        flex-direction: column;
+        padding: 0;
+    }
+    
+    .reviews-arrow {
+        align-self: flex-end;
+        margin: 10px 30px 0 0;        
+    }
+
+    #faq-section {
+        padding: 20px;
+    }
+
+    .faq-questions {
+        width: 80%;
+        margin: 30px;
+    }
+
+    #contact-us .flex {
+        flex-direction: column;
+        padding: 20px;
+        gap: 30px;
+    }
+
+    .main-footer {
+        flex-direction: column;
+        padding: 20px;
+        gap: 10px;
+    }
+
+    .main-footer .right-section {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .main-footer .right-section .navigation {
+        margin: 0;
+    }
+
+}
