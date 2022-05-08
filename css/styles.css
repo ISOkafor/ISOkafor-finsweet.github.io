@@ -529,8 +529,7 @@
 .faq-questions p {
     font-size: 14px;
     margin-top: 10px;
-    color: #939191;
-    text-align: justify;
+    color: #939191;    
     width: 80%;
 }
 
@@ -603,12 +602,17 @@ footer {
     margin-right: 150px;
 }
 
-/* Mobile Design */
+/* Mobile View */
 
 @media (max-width: 426px) {
     .main-header {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: flex-start;        
+    }
+
+    .main-header,
+    #quote-section .left-section {
+        padding-left: 10px;
     }
 
     .main-header .right-section {
@@ -656,7 +660,7 @@ footer {
     #process-section .step-section,    
     .container,
     #contact-us .right-social,
-    #contact-us .left-address {
+    #contact-us .left-address{
         width: 100%;
     }    
 
@@ -665,7 +669,14 @@ footer {
     }
 
     #hero-section .text-section {
-        order: 2;
+        order: 2;        
+    }
+
+    #hero-section .text-section,
+    #quote-section .right-form-section,
+    #process-section .head-section,
+    #offer-section {
+        padding: 0 10px;
     }
 
     #hero-section h1,
@@ -678,7 +689,7 @@ footer {
 
     #quote-section .left-section .text-box {
         width: 80%;
-    }
+    }    
 
     #quote-section .flex-row {
         flex-direction: row;
@@ -689,8 +700,16 @@ footer {
         margin-top: 30px;
     }
 
+    #offer-section .desc {
+        padding-top: 30px;
+    }    
+
+    #offer-section {
+        padding-bottom: 30px;
+    }
+
     #offer-section .grid {
-        padding-top: 0;
+        padding-top: 0;    
     }
 
     #offer-section .grid .grid-box {
@@ -698,7 +717,9 @@ footer {
     }
 
     #cta-section .orange-box {
-        padding: 5px;
+        width: 70%;
+        left: 30%;
+        padding: 5px;        
     }
 
     #cta-section .orange-box p {
@@ -706,12 +727,26 @@ footer {
         margin: 20px;
     }
 
-    #experience-section .flex {
-        margin: 0 20px;
+    #cta-section .cta {
+        display: flex;
+        flex-direction: column;        
+    }
+
+    #cta-section .car-engine,
+    #cta-section .car-image {
+        width: 100%;
+    }
+
+    #experience-section .flex {        
+        width: 100%;        
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 20px;
     }
 
     #experience-section .experience {
-        width: 25%;
+        width: 49%;
+        margin-bottom: 30px;
     }
 
     #brands-section .flex {
@@ -735,7 +770,7 @@ footer {
 
     #customer-review .reviews {
         gap: 20px;
-        overflow: scroll;
+        overflow: hidden;
     }
 
     .reviews .review-box {
@@ -757,7 +792,8 @@ footer {
     
     .reviews-arrow {
         align-self: flex-end;
-        margin: 10px 30px 0 0;        
+        margin: 10px 30px 0 0;
+        display: none;        
     }
 
     #faq-section {
@@ -786,8 +822,98 @@ footer {
         gap: 10px;
     }
 
+    .main-footer #noRight {
+        margin-right: 0;
+    }
+
     .main-footer .right-section .navigation {
         margin: 0;
     }
 
+}
+
+
+/* Tablet View */
+@media (min-width: 426px) and (max-width: 769px){    
+    .main-header .road-assistance {
+        display: none;
+    }
+
+    .main-header .navigation {
+        border-right: none;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    #hero-section .text-section h1,
+    #quote-section .left-section h2,
+    #quote-section .right-form-section h3,
+    #process-section .head-section h2 {
+        font-size: 35px;
+    }
+    
+    #quote-section .left-section .image-box {
+        width: 15%;
+    }
+
+    #quote-section .left-section .text-box {
+        width: 70%;
+    }
+
+    #quote-section .flex {
+        padding: 0;
+    }
+    
+    #process-section .head-section {
+        align-self: flex-start;
+        width: 35%;
+    }
+
+    #process-section .step-section {
+        width: 53%;
+    }
+
+    #cta-section .orange-box {
+        padding: 20px;
+    }
+
+    .cta .orange-box p {
+        margin: 0;
+        font-size: 24px;
+    }
+
+    .orange-box button {
+        margin: 10px 0 ;
+    }
+
+    #brands-section .flex {
+        margin: 0;
+    }
+
+    #brands-section .brand-row {
+        padding-right: 0;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    #brands-section .brand-row img {
+        width: 20%;
+    }
+
+    #customer-review h2 {
+        font-size: 35px;
+        margin: 0 40px;
+    }
+
+    #contact-us .right-social {
+        width: 40%;
+    }
+
+    .main-footer .navigation {
+        margin-right: 0;
+    }
+
+    
 }
